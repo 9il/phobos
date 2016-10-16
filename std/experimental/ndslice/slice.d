@@ -2567,15 +2567,15 @@ private template PtrTuple(Names...)
         Slice!(2, double*) nn;
         Slice!(2, immutable(double)*) ni;
         Slice!(2, const(double)*) nc;
-        
+
         const Slice!(2, double*) cn;
         const Slice!(2, immutable(double)*) ci;
         const Slice!(2, const(double)*) cc;
-        
+
         immutable Slice!(2, double*) in_;
         immutable Slice!(2, immutable(double)*) ii;
         immutable Slice!(2, const(double)*) ic;
-        
+
         nc = nc; nc = cn; nc = in_;
         nc = nc; nc = cc; nc = ic;
         nc = ni; nc = ci; nc = ii;
@@ -2596,15 +2596,15 @@ private template PtrTuple(Names...)
         Slice!(2, Slice!(2, double*)) nn;
         Slice!(2, Slice!(2, immutable(double)*)) ni;
         Slice!(2, Slice!(2, const(double)*)) nc;
-        
+
         const Slice!(2, Slice!(2, double*)) cn;
         const Slice!(2, Slice!(2, immutable(double)*)) ci;
         const Slice!(2, Slice!(2, const(double)*)) cc;
-        
+
         immutable Slice!(2, Slice!(2, double*) )in_;
         immutable Slice!(2, Slice!(2, immutable(double)*)) ii;
         immutable Slice!(2, Slice!(2, const(double)*)) ic;
-        
+
         nc = nn; nc = cn; nc = in_;
         nc = nc; nc = cc; nc = ic;
         nc = ni; nc = ci; nc = ii;
